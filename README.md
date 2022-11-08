@@ -6,9 +6,9 @@ Find execution flows which starts at Lambda / API and ends in DynamoDb sink
 
 Flow:
 1. Clone the example repo
-2. Map all *.ts files which resides in the repo folder
-3. For each file (without node_modules files) build AST using type script parser
-4. Using recursion build execution flows which ends in DynamoDb function call
+2. Find all *.ts files which resides in the cloned folder
+3. For each file (not including node_modules files) build an AST using type-script parser
+4. Using recursion build execution flows which ends in DynamoDbStore function calls
 5. Create a json file which maps between file name to it's execution flows
 
 Execution flows output example:
@@ -121,7 +121,5 @@ node index.js
 ```
 
 ## Authors
-
-Contributors names and contact info
 
 Roy Soldin  
