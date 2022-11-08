@@ -44,7 +44,8 @@ getDirectories(__dirname + '/serverless-typescript-demo', function (err: any, re
         var json = JSON.stringify(executionFlowsByFile);
         console.log('Writing repo execution flows to execution_flows_by_file.json file...')
         fs.writeFile('execution_flows_by_file.json', json, 'utf8', () => {});
-        console.log('Execution flows:\n' + executionFlowsByFile);
+        console.log('Execution flows:');
+        console.log(executionFlowsByFile);
         }
 });
 
